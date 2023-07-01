@@ -1,0 +1,39 @@
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.icon-button__menu-icon {
+  width: 1.5625rem;
+  color: var(--color-dark-blue);
+}
+
+.icon-button__nav-icon {
+  width: 2rem;
+  color: var(--color-white);
+}
+
+@media screen and (hover: hover) {
+  .icon-button:hover {
+    background-color: var(--color-gray);
+  }
+  .icon-button:hover .icon-button__nav-icon {
+    color: var(--color-bright-red);
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .icon-button {
+    transition-property: background-color, color;
+    transition-duration: 150ms;
+  }
+}

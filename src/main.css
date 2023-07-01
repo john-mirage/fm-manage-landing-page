@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#app {
+  isolation: isolate;
+}
+
+:root {
+  --color-bright-red: hsl(12, 88%, 59%);
+  --color-dark-blue: hsl(228, 39%, 23%);
+  --color-dark-grayish-blue: hsl(227, 12%, 61%);
+  --color-pale-red: hsl(233, 12%, 13%);
+  --color-gray: hsl(0, 0%, 94%);
+  --color-light-gray: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+}

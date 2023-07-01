@@ -1,0 +1,26 @@
+.logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo__icon {
+  display: block;
+}
+
+.logo__icon--on-light {
+  width: 6.875rem;
+  height: auto;
+  color: var(--color-dark-blue);
+}
+
+.logo__icon--on-dark {
+  width: 9.875rem;
+  height: auto;
+  color: var(--color-light-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .logo__icon--on-light {
+    width: 9.1875rem;
+  }
+}
